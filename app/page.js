@@ -120,7 +120,7 @@ export default function Home() {
       {/* Hero Section */}
       <section
         id="home"
-        className="relative min-h-[52vh] mt-30 overflow-hidden scroll-mt-24"
+        className="relative mt-14 min-h-[52vh] overflow-hidden scroll-mt-24 md:mt-24 md:scroll-mt-28"
         style={{ fontFamily: "var(--font-merriweather)" }}
       >
         <div className="pointer-events-none absolute inset-0 mix-blend-screen opacity-55">
@@ -137,13 +137,13 @@ export default function Home() {
         </div>
         <div className="pointer-events-none absolute inset-0" />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0f0f0f]" />
-        <div className="relative z-10 mx-30 flex min-h-[52vh]">
-          <div className="px-12 py-14">
-            <span className="text-8xl tracking-wider font-semibold block mb-2">
+        <div className="relative z-10 mx-auto flex min-h-[52vh] w-full max-w-[1400px] items-center justify-center px-4 sm:px-6 md:justify-start md:px-10 lg:px-20">
+          <div className="w-full py-10 text-center md:w-auto md:py-14 md:text-left">
+            <span className="mb-2 block text-4xl font-semibold leading-tight tracking-wide sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
               Atharva Ganesh Gourshete
-              <span className="text-yellow-500 text-8xl">.</span>
+              <span className="text-yellow-500 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">.</span>
             </span>
-            <span className="text-3xl tracking-wider text-white/50">
+            <span className="text-lg tracking-wide text-white/50 sm:text-xl md:text-2xl lg:text-3xl">
               Full Stack Web Developer
             </span>
           </div>
@@ -151,41 +151,60 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section id="about" className="mx-30 mt-50 flex scroll-mt-24">
-        <div className="grid grid-cols-2 gap-20">
+      <section
+        id="about"
+        className="mx-auto mt-16 flex w-full max-w-[1400px] scroll-mt-24 px-4 sm:px-6 md:mt-24 md:scroll-mt-28 md:px-10 lg:px-20"
+      >
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-20">
           <div>
-            <h2 className="text-4xl font-bold mb-4">
-              About<span className="text-yellow-500 text-5xl">.</span>
+            <h2 className="mb-4 text-3xl font-bold sm:text-4xl">
+              About<span className="text-4xl text-yellow-500 sm:text-5xl">.</span>
             </h2>
-            <p className="text-lg text-white/70 mb-2">
-              Hi there! I'm <span className="font-bold text-white">Atharva Gourshete</span>. I am a final year Computer Science student
-              at the <span className="font-bold text-white">Mumbai University</span>. I am also pursuing a BS degree in Data Science and Programming at <span className="font-bold text-white">IIT Madras</span>. Recently I completed my
+            <p className="mb-2 text-base text-white/70 md:text-lg">
+              Hi there! I&apos;m{" "}
+              <span className="font-bold text-white">Atharva Gourshete</span>. I
+              am a final year Computer Science student at the{" "}
+              <span className="font-bold text-white">Mumbai University</span>. I
+              am also pursuing a BS degree in Data Science and Programming at{" "}
+              <span className="font-bold text-white">IIT Madras</span>. Recently
+              I completed my
               Foundation Program in Data Science and Programming. I’ve spent the
               last 2 years messing around with tech exploring stuff, breaking
               things, and finally figuring out how they actually work.
             </p>
-            <p className="text-lg text-white/70">
-              The only thing that I believe is <span className="font-bold text-white">'Minimalism Maximizes Impact'</span>.
+            <p className="text-base text-white/70 md:text-lg">
+              The only thing that I believe is{" "}
+              <span className="font-bold text-white">
+                &apos;Minimalism Maximizes Impact&apos;
+              </span>.
               Small steps matter. Probably someone who loves to sneak out
-              answers to <span className="font-bold text-white">'Why'</span> instead of <span className="font-bold text-white">'How'</span>.
+              answers to <span className="font-bold text-white">&apos;Why&apos;</span>{" "}
+              instead of <span className="font-bold text-white">&apos;How&apos;</span>.
             </p>
           </div>
         </div>
       </section>
 
-      <section id="projects" className="mx-30 mt-50 flex scroll-mt-24">
+      <section
+        id="projects"
+        className="mx-auto mt-16 flex w-full max-w-[1400px] scroll-mt-24 px-4 sm:px-6 md:mt-24 md:scroll-mt-28 md:px-10 lg:px-20"
+      >
         <div className="w-full">
-          <h2 className="text-4xl font-bold mb-4">
-            Projects<span className="text-yellow-500 text-5xl">.</span>
+          <h2 className="mb-4 text-3xl font-bold sm:text-4xl">
+            Projects<span className="text-4xl text-yellow-500 sm:text-5xl">.</span>
           </h2>
           <MotionCarouselDemo SLIDES={SLIDES} />
         </div>
       </section>
 
-      <section id="certifications" className="mx-30 mt-50 flex scroll-mt-24">
+      <section
+        id="certifications"
+        className="mx-auto mt-16 flex w-full max-w-[1400px] scroll-mt-24 px-4 sm:px-6 md:mt-24 md:scroll-mt-28 md:px-10 lg:px-20"
+      >
         <div className="w-full">
-          <h2 className="text-4xl font-bold mb-7">
-            Certifications<span className="text-yellow-500 text-5xl">.</span>
+          <h2 className="mb-7 text-3xl font-bold sm:text-4xl">
+            Certifications
+            <span className="text-4xl text-yellow-500 sm:text-5xl">.</span>
           </h2>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {CERTIFICATIONS.map((cert) => (
@@ -198,7 +217,7 @@ export default function Home() {
                     <Badge variant="secondary">{cert.issuer}</Badge>
                     <Badge variant="secondary">{cert.year}</Badge>
                   </CardAction>
-                  <CardTitle className="pr-24 text-lg md:text-xl">
+                  <CardTitle className="pr-0 text-lg sm:pr-24 md:text-xl">
                     {cert.title}
                   </CardTitle>
                   <CardDescription className="text-sm leading-relaxed text-white/70">
@@ -223,10 +242,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="experience" className="mx-30 mt-50 mb-20 flex scroll-mt-24">
+      <section
+        id="experience"
+        className="mx-auto mt-16 mb-20 flex w-full max-w-[1400px] scroll-mt-24 px-4 sm:px-6 md:mt-24 md:scroll-mt-28 md:px-10 lg:px-20"
+      >
         <div className="w-full">
-          <h2 className="text-4xl font-bold mb-7">
-            Experience<span className="text-yellow-500 text-5xl">.</span>
+          <h2 className="mb-7 text-3xl font-bold sm:text-4xl">
+            Experience<span className="text-4xl text-yellow-500 sm:text-5xl">.</span>
           </h2>
           <Timeline data={EXPERIENCES} />
         </div>

@@ -1,10 +1,10 @@
 const Footer = () => {
   return (
-    <div className="bg-[#131313] px-10 py-8 flex items-center justify-between">
+    <div className="flex flex-col items-start justify-between gap-4 bg-[#131313] px-5 py-8 sm:flex-row sm:items-center sm:px-10">
       <span className="text-xs text-neutral-500 uppercase tracking-widest font-medium">
         Get in touch
       </span>
-      <div className="flex items-center gap-2.5">
+      <div className="flex flex-wrap items-center gap-2.5">
         <a
           href="https://www.linkedin.com/in/atharva-gourshete-b2a66927b/"
           className="text-sm text-white border-b border-white/15 pb-px hover:border-white/40 transition-colors"

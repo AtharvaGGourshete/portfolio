@@ -77,7 +77,7 @@ function MotionCarousel(props) {
   } = useEmblaControls(emblaApi);
 
   return (
-    <div className="w-full space-y-4 [--slide-height:21rem] sm:[--slide-height:23rem] md:[--slide-height:24rem] [--slide-spacing:1.5rem] [--slide-size:72%] md:[--slide-size:55%]">
+    <div className="w-full space-y-4 [--slide-height:22rem] sm:[--slide-height:23rem] md:[--slide-height:24rem] [--slide-spacing:0rem] sm:[--slide-spacing:1rem] md:[--slide-spacing:1.5rem] [--slide-size:100%] sm:[--slide-size:85%] md:[--slide-size:55%]">
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex touch-pan-y touch-pinch-zoom">
           {slides.map((slide, index) => {
@@ -96,7 +96,7 @@ function MotionCarousel(props) {
                 className="h-[var(--slide-height)] mr-[var(--slide-spacing)] basis-[var(--slide-size)] flex-none flex min-w-0"
               >
                 <motion.div
-                  className="size-full rounded-xl border border-white/20 bg-white/[0.03] p-5 md:p-6 text-white"
+                  className="size-full rounded-xl border border-white/20 bg-white/[0.03] p-4 text-white sm:p-5 md:p-6"
                   initial={false}
                   animate={{
                     scale: isActive ? 1 : 0.9,
@@ -108,12 +108,12 @@ function MotionCarousel(props) {
                       href={slide.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-2xl md:text-3xl font-semibold leading-tight underline-offset-4 hover:underline decoration-yellow-500"
+                      className="text-xl font-semibold leading-tight underline-offset-4 decoration-yellow-500 hover:underline sm:text-2xl md:text-3xl"
                     >
                       {name}
                     </a>
 
-                    <div className="mt-4 space-y-2 text-sm md:text-base text-white/70 leading-relaxed">
+                    <div className="mt-4 space-y-2 text-sm leading-relaxed text-white/70 md:text-base">
                       {descriptionLines.map((line, lineIndex) => (
                         <p key={`${index}-line-${lineIndex}`}>{line}</p>
                       ))}
@@ -136,12 +136,17 @@ function MotionCarousel(props) {
           })}
         </div>
       </div>
-      <div className="flex justify-between">
-        <Button size="icon" onClick={onPrev} disabled={prevDisabled}>
+      <div className="flex items-center justify-center gap-3 sm:justify-between">
+        <Button
+          size="icon"
+          className="hidden sm:inline-flex"
+          onClick={onPrev}
+          disabled={prevDisabled}
+        >
           <ChevronLeft className="size-5" />
         </Button>
 
-        <div className="flex flex-wrap justify-end items-center gap-2">
+        <div className="flex flex-wrap items-center justify-center gap-2 sm:justify-end">
           {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}
@@ -151,7 +156,12 @@ function MotionCarousel(props) {
           ))}
         </div>
 
-        <Button size="icon" onClick={onNext} disabled={nextDisabled}>
+        <Button
+          size="icon"
+          className="hidden sm:inline-flex"
+          onClick={onNext}
+          disabled={nextDisabled}
+        >
           <ChevronRight className="size-5" />
         </Button>
       </div>
