@@ -1,4 +1,5 @@
 import { MotionCarouselDemo } from "@/components/demo-components-community-motion-carousel";
+import { GravityStarsBackground } from "@/components/animate-ui/components/backgrounds/gravity-stars";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -75,11 +76,35 @@ const CERTIFICATIONS = [
       "Foundation-level certification in programming and data science from the Indian Institute of Technology Madras.",
     skills: ["Python", "Statistics", "Data Analysis", "Problem Solving"],
     certificateUrl:
-      "https://storage.googleapis.com/online-degree-app-production-documents/CERTIFICATE/FOUNDATION_CERTIFICATE/F2_2025/0855d53f1e3bf5ab13bbe9114cd4cf902e23aa993b8854b523566dca56a35d02.pdf?Expires=1776515772&GoogleAccessId=production-document-storage-si%40online-degree-app.iam.gserviceaccount.com&Signature=AodT5qNg0D1Arq7RDA5pTa2M1OpKfugiaVrOEd%2FgXia3dPt11MalLqcxApWrwqFJ3qTMlckYa9wGEyH14ojfxuRiFtG5mf0GZ72z4F9xHwWK2qt6pPtUT%2Ftiy4deNf0PoFAGmfCjX2HdmAmYm178%2FLu87%2BbJLYCG7TVchf0XK%2B8RPDf3T%2BWe9Uv8FHKrUAuPEG19JSkuI3KIyLGRu8IT48cR7XnSK%2BlAj6pzdS%2FzKB%2BKE46x9NCB%2BfUSMpXtkB62KOhToQj%2BTzTvCzeRYnie9gSqamSVh0ynKzO56IBK3dBzv2sqtSasJDueoICMNyjgF9Tv9fDhV6fYLQLVOivn9Q%3D%3D",
+      "https://storage.googleapis.com/online-degree-app-production-documents/CERTIFICATE/FOUNDATION_CERTIFICATE/F2_2025/0855d53f1e3bf5ab13bbe9114cd4cf902e23aa993b8854b523566dca56a35d02.pdf?Expires=1776539163&GoogleAccessId=production-document-storage-si%40online-degree-app.iam.gserviceaccount.com&Signature=Ua8n48y2xSv11168V%2FoHyDQP0i1hjfjXWbchSO7pJC7avth7kNoDHIpRhG4hNJ383YbQrNSS6JZ3aOOtfCi0G2u4faR59%2BcH%2FXjn8Mss1MRyqsD5HFroEMF907okijzrhrDw5dQBsiLzm%2BujsXMXhaAfMyfdVfIGdkpEII409V%2FZseOinG04IXz%2BlawfnCFaOj8zcPmx8aIPj49KZhzUJZKWvCH9d%2FVBjJLmfo1M0WKN09EplxVHeuL3wgQ5OeUCiY8MeCDsX90Kc7v3umCke4AtcP3kXvM7f9B%2Fpa%2FjYuMLmZAXJVJcjh3D5FbxwJbJLkv4%2BqbrwGsSbOJxpFqmcQ%3D%3D",
   },
 ];
 
 const EXPERIENCES = [
+  {
+    role: "Google Developer Group Technical Head",
+    company: "Google Developer Group on Campus APSIT",
+    duration: "September 2025 - Present",
+    location: "Mumbai, India",
+    description:
+      `Led technical initiatives as Technical Head at Google Developer Group on Campus APSIT, driving developer education and community engagement. Organized and facilitated workshops, events, and hands-on sessions to build technical skills across the campus community, fostering a culture of learning and collaboration among aspiring developers.`
+  },
+  {
+    role: "Google Developer Group Community Volunteer",
+    company: "Google Developer Group on Campus APSIT",
+    duration: "September 2024 - May 2025",
+    location: "Mumbai, India",
+    description:
+      `Served as a Community Volunteer at Google Developer Group on Campus APSIT, supporting the organization and execution of tech events, workshops, and developer community initiatives. Contributed to fostering a collaborative learning environment for students interested in Google technologies and software development.`
+  },
+  {
+    role: "Freelance Full Stack Developer",
+    company: "Dakhya Financial Consultancy",
+    duration: "June 2025 - July 2025",
+    location: "Mumbai, India",
+    description:
+      `Delivered end-to-end website for Dakhya Financial Consultancy, from requirement breakdown to deployment and handover.Collaborated with a team to design and deliver a complete web presence for Dakhya Financial Consultancy including a conversion-focused landing page and a structured client onboarding website. Worked end-to-end from concept to deployment, ensuring a professional, trust-driven experience tailored to the firm's financial advisory audience.` 
+  },
   {
     role: "Frontend Developer",
     company: "Enigma Webverse 3.0",
@@ -88,77 +113,67 @@ const EXPERIENCES = [
     description:
       "Secured 1st place in Enigma Webverse 3.0 Data Privacy Hackathon, SIES College.",
   },
-  {
-    role: "Freelance Full Stack Developer",
-    company: "Dakhya Financial Consultancy",
-    duration: "June 2025 - July 2025",
-    location: "Mumbai, India",
-    description:
-      "Delivered end-to-end website for Dakhya Financial Consultancy, from requirement breakdown to deployment and handover.",
-    highlights: [
-      "Developed scalable web apps using React, Node.js, and PostgreSQL.",
-      "Integrated authentication, payment flows, and role-based dashboards.",
-      "Set up CI/CD pipelines and cloud deployments with monitoring and error tracking.",
-    ],
-  },
-  {
-    role: "Google Developer Group Technical Head",
-    company: "Google Developer Group on Campus APSIT",
-    duration: "September 2025 - Present",
-    location: "Mumbai, India",
-    description:
-      "Contributing fixes and enhancements to community projects while improving code quality practices.",
-    highlights: [
-      "Resolved UI and accessibility issues in component libraries and starter templates.",
-      "Submitted bug fixes with tests and clear changelog notes for maintainers.",
-      "Reviewed pull requests and improved developer documentation for onboarding.",
-    ],
-  },
 ];
 export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section
-        className="mx-30 flex mt-50"
+        id="home"
+        className="relative min-h-[52vh] mt-30 overflow-hidden scroll-mt-24"
         style={{ fontFamily: "var(--font-merriweather)" }}
       >
-        <div>
-          <span className="text-8xl tracking-wider font-semibold block mb-2">
-            Atharva Ganesh Gourshete
-            <span className="text-yellow-500 text-8xl">.</span>
-          </span>
-          <span className="text-3xl tracking-wider text-white/50">
-            Full Stack Web Developer
-          </span>
+        <div className="pointer-events-none absolute inset-0 mix-blend-screen opacity-55">
+          <GravityStarsBackground
+            className="h-full w-full text-white/90"
+            starsCount={110}
+            starsSize={2.5}
+            starsOpacity={0.85}
+            movementSpeed={0.2}
+            gravityStrength={60}
+            mouseInfluence={140}
+            glowIntensity={14}
+          />
+        </div>
+        <div className="pointer-events-none absolute inset-0" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0f0f0f]" />
+        <div className="relative z-10 mx-30 flex min-h-[52vh]">
+          <div className="px-12 py-14">
+            <span className="text-8xl tracking-wider font-semibold block mb-2">
+              Atharva Ganesh Gourshete
+              <span className="text-yellow-500 text-8xl">.</span>
+            </span>
+            <span className="text-3xl tracking-wider text-white/50">
+              Full Stack Web Developer
+            </span>
+          </div>
         </div>
       </section>
 
       {/* About */}
-      <section className="mx-30 flex mt-50">
+      <section id="about" className="mx-30 mt-50 flex scroll-mt-24">
         <div className="grid grid-cols-2 gap-20">
           <div>
             <h2 className="text-4xl font-bold mb-4">
               About<span className="text-yellow-500 text-5xl">.</span>
             </h2>
             <p className="text-lg text-white/70 mb-2">
-              Hi there! I'm Atharva. I am a final year Computer Science student
-              at the Mumbai University. I am also pursuing a BS degree in Data
-              Science and Programming at IIT Madras. Recently I completed my
+              Hi there! I'm <span className="font-bold text-white">Atharva Gourshete</span>. I am a final year Computer Science student
+              at the <span className="font-bold text-white">Mumbai University</span>. I am also pursuing a BS degree in Data Science and Programming at <span className="font-bold text-white">IIT Madras</span>. Recently I completed my
               Foundation Program in Data Science and Programming. I’ve spent the
               last 2 years messing around with tech exploring stuff, breaking
               things, and finally figuring out how they actually work.
             </p>
             <p className="text-lg text-white/70">
-              The only thing that I believe is 'Minimalism Maximizes Impact'.
+              The only thing that I believe is <span className="font-bold text-white">'Minimalism Maximizes Impact'</span>.
               Small steps matter. Probably someone who loves to sneak out
-              answers to 'Why' instead of 'How'.
+              answers to <span className="font-bold text-white">'Why'</span> instead of <span className="font-bold text-white">'How'</span>.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="mx-30 flex mt-50">
+      <section id="projects" className="mx-30 mt-50 flex scroll-mt-24">
         <div className="w-full">
           <h2 className="text-4xl font-bold mb-4">
             Projects<span className="text-yellow-500 text-5xl">.</span>
@@ -167,7 +182,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-30 flex mt-50">
+      <section id="certifications" className="mx-30 mt-50 flex scroll-mt-24">
         <div className="w-full">
           <h2 className="text-4xl font-bold mb-7">
             Certifications<span className="text-yellow-500 text-5xl">.</span>
@@ -208,7 +223,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-30 flex mt-50 mb-20">
+      <section id="experience" className="mx-30 mt-50 mb-20 flex scroll-mt-24">
         <div className="w-full">
           <h2 className="text-4xl font-bold mb-7">
             Experience<span className="text-yellow-500 text-5xl">.</span>

@@ -1,22 +1,33 @@
-import React from 'react'
+const NAV_ITEMS = [
+  { label: 'Home', href: '#home' },
+  { label: 'About', href: '#about' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Certifications', href: '#certifications' },
+  { label: 'Experience', href: '#experience' },
+];
 
 const Navbar = () => {
   return (
-    <>
-    <nav className='p-3'>
-        <div className='flex justify-between mx-40 items-center'>
-            <div className='text-2xl'>AG<span className='text-yellow-500 text-5xl'>.</span></div>
-            <div className='flex text-md gap-3'>
-            <span className='hover:underline cursor-pointer'>Home</span>
-            <span className='hover:underline cursor-pointer'>About</span>
-            <span className='hover:underline cursor-pointer'>Projects</span>
-            <span className='hover:underline cursor-pointer'>Certifications</span>
-            <span className='hover:underline cursor-pointer'>Experience</span>
-            </div>
-        </div>
-    </nav>
-    </>
-  )
-}
+    <nav className="p-3 sticky top-0 z-10 bg-[#0f0f0f]">
+      <div className="mx-40 flex items-center justify-between">
+        <a href="#home" className="text-2xl">
+          AG<span className="text-5xl text-yellow-500">.</span>
+        </a>
 
-export default Navbar
+        <div className="flex gap-3 text-md">
+          {NAV_ITEMS.map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              className="cursor-pointer hover:underline"
+            >
+              {item.label}
+            </a>
+          ))}
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

@@ -53,14 +53,6 @@ export const Timeline = ({ data = [] }) => {
                   {description}
                 </p>
               ) : null}
-
-              {highlights.length ? (
-                <ul className="mt-4 space-y-2 text-sm leading-relaxed text-white/65 md:text-base">
-                  {highlights.map((point, pointIndex) => (
-                    <li key={`${key}-highlight-${pointIndex}`}>- {point}</li>
-                  ))}
-                </ul>
-              ) : null}
             </article>
           );
         })}
