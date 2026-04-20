@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-10 bg-[#0f0f0f] p-3">
+    <nav className="sticky top-0 z-10 bg-[#0f0f0f] p-3 backdrop-blur">
       <div className="mx-auto w-full max-w-[1400px] px-4 sm:px-6 lg:px-12">
         <div className="flex items-center justify-between">
           <a href="#home" className="text-xl sm:text-2xl" onClick={handleNavClick}>

@@ -192,7 +192,7 @@ export default function Home() {
         <div className="w-full">
           <h2 className="mb-4 text-3xl font-bold sm:text-4xl">
             Projects<span className="text-4xl text-yellow-500 sm:text-5xl">.</span>
-          </h2>
+          </h2>``
           <MotionCarouselDemo SLIDES={SLIDES} />
         </div>
       </section>
