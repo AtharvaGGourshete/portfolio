@@ -18,9 +18,7 @@ const SLIDES = [
     name: "Chainsaw - Supply Chain Optimization",
     githubUrl: "https://github.com/AtharvaGGourshete/supply-chain-optimization",
     description: [
-      "Built a real-time engineering dashboard for product and user health metrics.",
-      "Implemented role-based access, alerting rules, and incident ownership flows.",
-      "Cut debugging turnaround by exposing anomaly timelines and trace drill-downs.",
+      `A web application that optimizes supply chain logistics and inventory management. This project addresses critical supply chain challenges such as demand forecasting, route optimization, inventory level management, and supplier coordination. By leveraging data-driven insights and optimization algorithms, it helps businesses reduce costs, minimize delivery times, and improve operational efficiency across their entire supply chain network.`,
     ],
     technologies: ["React", "Javascript", "MongoDB", "Express", "Flask"],
   },
@@ -28,22 +26,20 @@ const SLIDES = [
     name: "Intellix - Context-Driven AI Search Engine",
     githubUrl: "https://github.com/AtharvaGGourshete/Intellix",
     description: [
-      "Created an applicant tracking system for sourcing, screening, and interview stages.",
-      "Added resume parsing, Kanban hiring pipelines, and recruiter activity logs.",
-      "Improved team visibility with shared scorecards and status-based automation.",
+      `Intellix solves the problem of limited conversational intelligence by enabling meaningful dialogue where the AI understands and maintains context across interactions. It bridges the gap between basic chatbots and true contextual understanding, making AI assistance more practical and relevant for real-world applications like customer support, education, and productivity.`,
     ],
     technologies: ["React", "Javascript", "Node.js", "Express", "Supabase"],
   },
-  {
-    name: "Prept - AI Interview Marketplace",
-    githubUrl: "https://github.com/AtharvaGGourshete/",
-    description: [
-      "Developed a student collaboration portal for events, clubs, and academic communities.",
-      "Integrated announcements, discussions, and RSVP workflows across departments.",
-      "Increased event participation using personalized feeds and reminder notifications.",
-    ],
-    technologies: ["Next", "Javascript", "Prisma", "Supabase", "Clerk"],
-  },
+  // {
+  //   name: "Prept - AI Interview Marketplace",
+  //   githubUrl: "https://github.com/AtharvaGGourshete/",
+  //   description: [
+  //     "Developed a student collaboration portal for events, clubs, and academic communities.",
+  //     "Integrated announcements, discussions, and RSVP workflows across departments.",
+  //     "Increased event participation using personalized feeds and reminder notifications.",
+  //   ],
+  //   technologies: ["Next", "Javascript", "Prisma", "Supabase", "Clerk"],
+  // },
   {
     name: "Vehiql - AI Car Marketplace",
     githubUrl: "https://github.com/AtharvaGGourshete/ai-based-car-finder",
@@ -192,7 +188,7 @@ export default function Home() {
         <div className="w-full">
           <h2 className="mb-4 text-3xl font-bold sm:text-4xl">
             Projects<span className="text-4xl text-yellow-500 sm:text-5xl">.</span>
-          </h2>``
+          </h2>
           <MotionCarouselDemo SLIDES={SLIDES} />
         </div>
       </section>
