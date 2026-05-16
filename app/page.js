@@ -15,14 +15,6 @@ import Link from "next/link";
 
 const SLIDES = [
   {
-    name: "Chainsaw - Supply Chain Optimization",
-    githubUrl: "https://github.com/AtharvaGGourshete/supply-chain-optimization",
-    description: [
-      `A web application that optimizes supply chain logistics and inventory management. This project addresses critical supply chain challenges such as demand forecasting, route optimization, inventory level management, and supplier coordination. By leveraging data-driven insights and optimization algorithms, it helps businesses reduce costs, minimize delivery times, and improve operational efficiency across their entire supply chain network.`,
-    ],
-    technologies: ["React", "Javascript", "MongoDB", "Express", "Flask"],
-  },
-  {
     name: "Intellix - Context-Driven AI Search Engine",
     githubUrl: "https://github.com/AtharvaGGourshete/Intellix",
     description: [
@@ -30,16 +22,6 @@ const SLIDES = [
     ],
     technologies: ["React", "Javascript", "Node.js", "Express", "Supabase"],
   },
-  // {
-  //   name: "Prept - AI Interview Marketplace",
-  //   githubUrl: "https://github.com/AtharvaGGourshete/",
-  //   description: [
-  //     "Developed a student collaboration portal for events, clubs, and academic communities.",
-  //     "Integrated announcements, discussions, and RSVP workflows across departments.",
-  //     "Increased event participation using personalized feeds and reminder notifications.",
-  //   ],
-  //   technologies: ["Next", "Javascript", "Prisma", "Supabase", "Clerk"],
-  // },
   {
     name: "Vehiql - AI Car Marketplace",
     githubUrl: "https://github.com/AtharvaGGourshete/ai-based-car-finder",
@@ -51,6 +33,26 @@ const SLIDES = [
     ],
     technologies: ["Next", "Javascript", "Prisma", "Supabase", "Clerk"],
   },
+  {
+    name: "Chainsaw - Supply Chain Optimization",
+    githubUrl: "https://github.com/AtharvaGGourshete/supply-chain-optimization",
+    description: [
+      `A web application that optimizes supply chain logistics and inventory management. This project addresses critical supply chain challenges such as demand forecasting, route optimization, inventory level management, and supplier coordination. By leveraging data-driven insights and optimization algorithms, it helps businesses reduce costs, minimize delivery times, and improve operational efficiency across their entire supply chain network.`,
+    ],
+    technologies: ["React", "Javascript", "MongoDB", "Express", "Flask"],
+  },
+  
+  // {
+  //   name: "Prept - AI Interview Marketplace",
+  //   githubUrl: "https://github.com/AtharvaGGourshete/",
+  //   description: [
+  //     "Developed a student collaboration portal for events, clubs, and academic communities.",
+  //     "Integrated announcements, discussions, and RSVP workflows across departments.",
+  //     "Increased event participation using personalized feeds and reminder notifications.",
+  //   ],
+  //   technologies: ["Next", "Javascript", "Prisma", "Supabase", "Clerk"],
+  // },
+  
 ];
 
 const CERTIFICATIONS = [
