@@ -72,7 +72,7 @@ const CERTIFICATIONS = [
       "Foundation-level certification in programming and data science from the Indian Institute of Technology Madras.",
     skills: ["Python", "Statistics", "Data Analysis", "Problem Solving"],
     certificateUrl:
-      "https://storage.googleapis.com/online-degree-app-production-documents/CERTIFICATE/FOUNDATION_CERTIFICATE/F2_2025/0855d53f1e3bf5ab13bbe9114cd4cf902e23aa993b8854b523566dca56a35d02.pdf?Expires=1776539163&GoogleAccessId=production-document-storage-si%40online-degree-app.iam.gserviceaccount.com&Signature=Ua8n48y2xSv11168V%2FoHyDQP0i1hjfjXWbchSO7pJC7avth7kNoDHIpRhG4hNJ383YbQrNSS6JZ3aOOtfCi0G2u4faR59%2BcH%2FXjn8Mss1MRyqsD5HFroEMF907okijzrhrDw5dQBsiLzm%2BujsXMXhaAfMyfdVfIGdkpEII409V%2FZseOinG04IXz%2BlawfnCFaOj8zcPmx8aIPj49KZhzUJZKWvCH9d%2FVBjJLmfo1M0WKN09EplxVHeuL3wgQ5OeUCiY8MeCDsX90Kc7v3umCke4AtcP3kXvM7f9B%2Fpa%2FjYuMLmZAXJVJcjh3D5FbxwJbJLkv4%2BqbrwGsSbOJxpFqmcQ%3D%3D",
+      "https://drive.google.com/file/d/13r1RswBYUw7FJalO2dKbGQIXn5Jsl6VN/view?usp=sharing",
   },
 ];
 
