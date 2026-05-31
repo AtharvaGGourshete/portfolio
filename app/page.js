@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/card";
 import { Timeline } from "@/components/ui/timeline";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 const SLIDES = [
   {
@@ -188,10 +189,15 @@ export default function Home() {
         className="mx-auto mt-16 flex w-full max-w-[1400px] scroll-mt-24 px-4 sm:px-6 md:mt-24 md:scroll-mt-28 md:px-10 lg:px-20"
       >
         <div className="w-full">
-          <h2 className="mb-4 text-3xl font-bold sm:text-4xl">
+          <h2 className="mb-4 text-3xl font-bold sm:text-4xl flex items-center gap-2">
             Projects<span className="text-4xl text-yellow-500 sm:text-5xl">.</span>
+            
           </h2>
+
           <MotionCarouselDemo SLIDES={SLIDES} />
+          <span className="flex justify-end text-sm font-normal text-white/50 -mt-5 md:hidden">
+              (Swipe to see more) <ArrowRight className="inline-block h-4 w-4 animate-pulse text-white/50" />
+            </span>
         </div>
       </section>
 
